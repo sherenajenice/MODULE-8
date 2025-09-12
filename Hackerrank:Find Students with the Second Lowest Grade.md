@@ -53,14 +53,17 @@ for student in students_with_second_lowest:
     print(student)
 
 ## Output
-Input                                Result
+Input                              
  [("Alice", 85),
     ("Bob", 75),
-    ("Charlie", 90),              [("Alice", 85), ("Bob", 75), ("Charlie", 90), ("David", 75), ("Eva", 80), ("Frank", 85)]
+    ("Charlie", 90),             
     ("David", 75),
     ("Eva", 80),
     ("Frank", 85)]
-    
+
+Result
+ [("Alice", 85), ("Bob", 75), ("Charlie", 90), ("David", 75), ("Eva", 80), ("Frank", 85)]
+ 
 ## Result
 The program was succesful.
 
