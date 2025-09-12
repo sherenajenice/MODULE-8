@@ -72,11 +72,17 @@ print(formatted_string)
 
 ## Sample Output
 This is an example
+
 of a long string
+
 that will be
+
 formatted into
+
 multiple lines based
+
 on the specified
+
 width.
 
 ## Result
