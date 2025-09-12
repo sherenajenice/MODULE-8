@@ -61,8 +61,7 @@ Input
     ("Eva", 80),
     ("Frank", 85)]
 
-Result
-
+Result                            
  [("Alice", 85), ("Bob", 75), ("Charlie", 90), ("David", 75), ("Eva", 80), ("Frank", 85)]
  
 ## Result
