@@ -1,68 +1,48 @@
-# 🎓 Hackerrank:Python Program to Find Students with the Second Lowest Grade
+# 🎓 Hackerrank:Python Program to Find the Simple Interest
 
-This program reads student names and their corresponding grades, identifies the **second lowest grade**, and prints the names of all students who have that grade in **alphabetical order**.
+This program reads the Principal amount, Rate of interest and Time and calculates the Simple Interest.
 
 ---
 
 ## 🎯 Aim
 
 To write a Python program to:
-- Read a list of students and their grades.
-- Identify the second lowest grade.
-- Print the names of students who have that grade, sorted alphabetically.
+- Read Principal amount, Rate of interest and Time.
+- Calculate the Simple Interest.
 
 ---
 
 ## 🧠 Algorithm
 
-1. **Read** an integer `n` representing the number of students.
-2. **Read** each student’s name and grade, and store them as a sublist inside a list.
-3. **Extract** all the grades and sort them.
-4. **Identify** the second lowest grade from the sorted grade list.
-5. **Collect** names of all students whose grade matches the second lowest grade.
-6. **Sort** the names alphabetically.
-7. **Print** each name on a new line.
+1. Start
+2. Input the Principal amount P from the user.
+3. Input the Rate of interest R (per annum) from the user.
+4. Input the Time T in months from the user.
+5. Convert Time into years:
+      Tyear=T/12
+6. Apply the formula for Simple Interest:
+      SI=PRTyear/100
+7. Display the value of SI.
+8. Stop
 
 ---
 
 ## 💻  Program
 
-students = [
-    ("Alice", 85),
-    ("Bob", 75),
-    ("Charlie", 90),
-    ("David", 75),
-    ("Eva", 80),
-    ("Frank", 85)
-]
+p=int(input())
 
-grades = [grade for name, grade in students]
+t=float(input())
 
-unique_grades = sorted(set(grades))  # Remove duplicates and sort the grades
+r=eval(input())
 
-second_lowest_grade = unique_grades[1]  
+def simpleInterest(p,t,r):
 
-students_with_second_lowest = [name for name, grade in students if grade == second_lowest_grade]
-
-students_with_second_lowest.sort()
-
-print("Students with the second lowest grade:")
-
-for student in students_with_second_lowest:
-
-    print(student)
+    si = (p*t*r)/100
+   
+    return si
 
 ## Output
-Input                              
- [("Alice", 85),
-    ("Bob", 75),
-    ("Charlie", 90),
-    ("David", 75),
-    ("Eva", 80),
-    ("Frank", 85)]
-
-Result                            
- [("Alice", 85), ("Bob", 75), ("Charlie", 90), ("David", 75), ("Eva", 80), ("Frank", 85)]
+<img width="1117" height="290" alt="image" src="https://github.com/user-attachments/assets/cda51d27-bdc8-483e-8663-eea846500334" />
  
 ## Result
 The program was succesful.
