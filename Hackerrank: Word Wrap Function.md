@@ -1,4 +1,4 @@
-# 🔄 Hackerrank : # 📦 Python Word Wrap Function
+# 🔄 Hackerrank : # 📦 Python Count Vowels and Consonants
 
 This Python program defines a function that **counts the number of vowels and consonants** from the given string.
 
